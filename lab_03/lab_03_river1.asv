@@ -36,6 +36,7 @@ cvx_begin
     % find points where straight f is crossing with r1 (upper river bound) and r2 (bottom river bound)
     p1 = find_intersection([A(1, 1) A(1, 2) b(1)], [f_normal_vec(1), f_normal_vec(2), f_b_val(1)]); % crossing of the r1 and f function
     p2 = find_intersection([A(2, 1) A(2, 2) b(2)], [f_normal_vec(1), f_normal_vec(2), f_b_val(1)]); % crossing of the r2 and f function
+ 
 cvx_end
 
 % find cooridnates for the plotting the f_line
@@ -52,7 +53,7 @@ hold on;
 title("River 1");
 daspect([1 1 1]);
 xlim([plot_bound_x_low plot_bound_x_high]);
-ylim([0 6]);
+ylim([y_low(1) y_high(1)]);
 grid on;
 
 plot(a_point(1), a_point(2) ,'r*'); 
@@ -60,8 +61,8 @@ plot(b_point(1), b_point(2) ,'ro');
 plot([x_low(1), x_high(1)], [y_low(1), y_high(1)], 'blue')
 plot([x_low(1), x_high(1)], [y_low(2), y_high(2)], 'blue')
 plot([p1(1), p2(1)], [p1(2), p2(2)], 'black', 'LineWidth', 2)
-plot([a_point(1), p1(1)], [a_point(2), p1(2)], 'black')
-plot([b_point(1), p2(1)], [b_point(2), p2(2)], 'black')
+plot([p1(1), p2(1)], [p1(2), p2(2)], 'black')
+plot([p1(1), p2(1)], [p1(2), p2(2)], 'black',)
 plot([x_low_f(1), x_high_f(1)], [y_low_f(1), y_high_f(1)], 'red--')
 hold off;
 
