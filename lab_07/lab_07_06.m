@@ -8,8 +8,8 @@ cvx_begin gp
 variables x y h
 maximize x * y * h
 subject to
-    x+2*h <= 14
-    y+2*h <= 10
+    x + 2 * h <= 14
+    y + 2 * h <= 10
 cvx_end
     
 fprintf('x=%2.4f, y=%2.4f, h=%2.4f \n', x, y, h)

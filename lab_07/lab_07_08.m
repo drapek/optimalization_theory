@@ -2,12 +2,14 @@
 %% 
 % 8th excercise from Optimalization_problems.pdf
 
-clear
-close all;
+clear, close all;
 
 cvx_begin
 variables r h
-maximize (12*r - (2 + pi/2)*r^2)
+maximize 12 * r - (2 + pi/2) * r^2
 subject to
    2*h + 2*r + pi*r == 12;
 cvx_end
+
+fprintf('r=%2.4f, h=%2.4f \n', r, h)
+fprintf('Window surface: %2.4f \n', 12 * r - (2 + pi/2) * r^2)
