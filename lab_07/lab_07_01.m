@@ -21,11 +21,11 @@ fprintf('Logarithm solution %4.2f \n', x * y)
 clear all;
 close all;
 
-cvx_begin gp
+cvx_begin
 variables  a b
-maximize log(a) + log(b)
+maximize a + b
 subject to
-    log(2 * exp(a)) + log(exp(b)) <= log(2400)
+    log(2 * exp(a) + exp(b)) <= log(2400)
 
 cvx_end
 
