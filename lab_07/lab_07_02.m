@@ -40,3 +40,6 @@ y = exp(log_y);
 
 fprintf('x = %4.2f, y = %4.2f \n', x, y)
 fprintf('Logarithm solution %4.2f \n', x * y)
+
+%% Results
+% In both cases the result is the good optimal result

@@ -35,3 +35,6 @@ y = exp(b);
 fprintf('x = %4.2f, y = %4.2f \n', x, y)
 fprintf('Logarithm solution %4.2f \n', x * y)
 
+%% Result
+% In both cases the results are good
+
