@@ -14,7 +14,7 @@ subject to
 cvx_end
 
 fprintf('x = %4.2f, y = %4.2f \n', x, y)
-fprintf('Logarithm solution %4.2f \n', x * y)
+fprintf('GP solution %4.2f \n', x * y)
 
 
 % this problem using logaritms
