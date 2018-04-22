@@ -14,7 +14,7 @@ fprintf('#### Check linearity ###########\n');
 fprintf('f. celu jest liniowa? - %d \n', is_linear(@(x1, x2, x3, x4)(0.15 * x1 + 0.25 * x2 + 0.05 * x3)));
 fprintf('ogranicznie  70 * x1 + 121 * x2 + 65 * x3 jest liniowe? - %d \n', is_linear(@(x1, x2, x3, x4)( 70 * x1 + 121 * x2 + 65 * x3)));
 fprintf('ogranicznie 107 * x1 + 500 * x2 jest liniowe?  - %d  \n', is_linear(@(x1, x2, x3, x4)(107 * x1 + 500 * x2)));
-fprintf('ogranicznie 45 * x1 + 40 * x2 + 60 * x3 jest liniowe? - %d \n  ', is_linear(@(x1, x2, x3, x4)(45 * x1 + 40 * x2 + 60 * x3)));
+fprintf('ogranicznie 45 * x1 + 40 * x2 + 60 * x3 jest liniowe? - %d \n', is_linear(@(x1, x2, x3, x4)(45 * x1 + 40 * x2 + 60 * x3)));
 fprintf('\n\n');
 
 

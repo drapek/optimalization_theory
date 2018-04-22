@@ -14,7 +14,11 @@
 % wspó³czynniki przy tych zmiennych mog¹ jedynie regulowaæ pochylenie tej¿e
 % p³aszczyzny nie zaburzaj¹c jej liniowoœci. Dodtakowo jest to problem
 % liniowy, a nie affiniczny poniewa¿ uk³ady te przechodz¹ przez œrodek
-% uk³adu wspó³rzêdnych (punkt O(0, 0, 0, 0)). 
+% uk³adu wspó³rzêdnych (punkt O(0, 0, 0, 0)). We wszystkich przyk³adach
+% bêdzie sprawdzana ta zale¿noœc przy u¿yciu napisanej funkcji is_lienar.
+% Funkcja ta sprawdza 2 za³o¿enia liniowoœci:
+%   za³1. f(ax) = a * f(x)
+%   za³2. f(x+y) = f(x) + f(y)
 
 % SprawdŸ liniowoœæ funkcji celu oraz ograniczeñ
 fprintf('#### Check linearity ###########\n');
