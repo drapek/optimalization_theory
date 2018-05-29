@@ -16,7 +16,6 @@ while (1)
     subject to 
          %b(2) - b(1) * b(1) - 1 <= 0 % this should be changed to non quadratic problem using linear aproximation (on sheet)
          b(2) - x_k * x_k - 1 - 2 * x_k * (b(1) - x_k) == 0 % aproximated y - x^2 - 1 == 0
-         
     cvx_end
 
     if (abs(x_k - b(1)) < eps)
